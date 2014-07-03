@@ -1,0 +1,267 @@
+@font-face {
+font-family: text; 
+font-style:normal; 
+src: URL(texty.ttf); 
+}
+@font-face {
+font-family: nadpis; 
+font-style:normal; 
+src: URL(nadpisy.ttf); 
+}
+body {
+	color: #000;
+	background : #EDEDED;
+	background-image: url(bg.png);
+	background-repeat : repeat;
+	margin: 9 auto;
+	background-position : top center;
+	font-family : text;
+	font-size : 11px;
+}
+a {
+font-size: 11px;
+color: black;
+text-decoration: none;
+font-weight: bold;
+}
+a:hover {
+text-decoration: underline;
+  color: black;
+}
+.h {
+display: none;
+}       
+.zatec {
+position: relative;
+top: 15px;
+left: 177px;
+}
+.volby {
+position:relative;
+top: 203px;
+left: -60px;
+margin: 0 auto;
+text-align: center;
+width: 280px;
+border: 1px solid #999; 
+background: #f1f1f1; 
+padding: 5px;
+font-size: 16px; 
+font-weight: bold;
+border-radius: 5px;
+}
+.telo {
+width: 998px;
+height: 100%;
+margin: 0 auto; 
+background: white;
+border-left: 1px solid #999; 
+border-right: 1px solid #999;
+}
+.nadpis_cent {
+font-size: 14px; 
+padding: 3px;
+text-align: left;
+font-family: text;
+font-weight: bold;
+line-height: 20px;
+width: 680px; 
+height: 15px;
+margin: 0px;
+background-color: #dff6ff;
+border-bottom: solid 3px #009091;
+padding-left: 5px;
+padding-bottom: 5px;
+color: #000;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+padding-top: 1px;
+padding-left: 10px;
+}
+.text_cent {
+text-align: left;
+font-family: text;
+width: 673px;
+font-size: 12px;
+border: 1px solid #CECECE;
+background: #FAFAFA;
+padding: 4px 9px 2px 9px;
+border-top: 0px;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+}
+.nadpis_levy_green {
+font-size: 14px; 
+padding: 3px;
+text-align: left;
+font-family: text;
+font-weight: bold;
+line-height: 20px;
+width: 280px; 
+height: 15px;
+margin: 0px;
+background-color: #f5ffd7;
+border-bottom: solid 3px #b4d455;
+padding-left: 5px;
+padding-bottom: 5px;
+color: #000;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+padding-top: 0px;
+padding-right: 5px;
+}
+.nadpis_levy_red {
+font-size: 14px; 
+padding: 3px;
+text-align: left;
+font-family: text;
+font-weight: bold;
+line-height: 20px;
+width: 280px; 
+height: 15px;
+margin: 0px;
+background-color: #fff4e6;
+border-bottom: solid 3px #f7941d;
+padding-left: 5px;
+padding-bottom: 5px;
+color: #000;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+padding-top: 0px;
+padding-right: 5px;
+}
+.nadpis_levy_grey {
+font-size: 14px; 
+padding: 3px;
+text-align: left;
+font-family: text;
+font-weight: bold;
+line-height: 20px;
+width: 280px; 
+height: 15px;
+margin: 0px;
+background-color: #eee;
+border-bottom: solid 3px #666;
+padding-left: 5px;
+padding-bottom: 5px;
+color: #000;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+padding-top: 0px;
+padding-right: 5px;
+}
+.text_levy {
+text-align: left;
+font-family: text;
+width: 270px;
+font-size: 12px;
+border: 1px solid #CECECE;
+background: #FAFAFA;
+padding: 4px 9px 2px 9px;
+border-top: 0px;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+}
+.zapati {
+padding: 10px;  
+width: 978px;
+margin: 0 auto; 
+background: white;
+border-left: 1px solid #999; 
+border-right: 1px solid #999;
+border-bottom: 1px solid #999;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+}
+
+.menu_link {
+padding: 10px 11px 0px 11px;
+text-transform: uppercase;
+float: left;
+}
+.menu_link:hover {
+	filter: alpha (opacity=40);
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+padding-bottom: 10px;
+background: url(link.png);
+background-repeat: no-repeat;
+background-position: bottom center;
+background-position-y: 6px;
+
+}
+
+
+.hlavni_menu {
+margin: 0 auto;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+background-image: url(menubg.png);
+font-size: 11px;
+font-weight: bold;
+width:1000px; 
+height:34px;
+}
+.logo {
+margin: 0 auto;
+width: 1000px;
+}
+.tabulka {
+width: 100%;
+padding-left: 2px;
+margin: 0 auto;
+}
+td {
+vertical-align: top;
+}
+.autor {
+font-weight: bold;
+}
+.copy {
+-webkit-transform: rotate(180deg);
+-moz-transform: rotate(180deg);
+-o-transform: rotate(180deg);
+-khtml-transform: rotate(180deg);
+-ms-transform: rotate(180deg);
+transform: rotate(180deg);
+display: inline-block;
+font-size: 1em;
+}
+.center {
+margin: 0 auto;
+text-align:center;
+}
+.admintb {
+padding: 10px;
+width: 1000px; 
+margin: 0 auto;
+background: white;
+border: 1px solid #999; 
+border-radius: 5px;
+}
+.adminleft {
+width: 300px;
+border-right: 1px solid #999;
+}
+.adminright {
+width: 696px; 
+border: 0px solid;
+padding: 5px;
+}
+.adminh {
+font-size: 17px;
+}
+.pol {
+border: 1px solid #CECECE;
+background: #FAFAFA;
+border-radius: 5px;
+padding: 10px;
+}
+.kandidat {
+border: 1px solid #999; 
+border-radius: 5px; 
+padding: 5px;
+width: 200px;
+height: 200px;
+}

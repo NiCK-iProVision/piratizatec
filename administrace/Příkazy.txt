@@ -1,0 +1,36 @@
+$dotaz=mysql_query("select * from katclan");
+while ($vypsat=mysql_fetch_assoc($dotaz))
+{
+echo "".$vypsat['id']."";
+}
+
+
+$_POST["popis"]=mysql_real_escape_string($_POST["popis"]);
+$_POST["clanek"]=mysql_real_escape_string($_POST["clanek"]);
+$a = $_POST['nazev2'];
+if (!empty($a) and !empty($_POST["popis"]) and !empty($_POST["clanek"])) {
+mysql_query("SET character_set_client=utf8");
+mysql_query("SET character_set_connection=utf8");
+mysql_query("SET character_set_results=utf8");
+$datum = StrFTime("%d/%m/%Y %H:%M:%S", Time());
+mysql_query("INSERT INTO `clanky` (`nazev`, `popis`, `clanek`, `kat`, `pridal`, `cas`) values ('$a', '".$_POST["popis"]."', '".$_POST["clanek"]."', '".$_POST["kat"]."', '".$_SESSION["SESS_LOGIN"]."', '$datum')");
+
+
+
+$_POST["clanek"]=mysql_real_escape_string($_POST["clanek"]);
+$_POST["popis"]=mysql_real_escape_string($_POST["popis"]);
+$a = $_POST['nazev2'];
+if (!empty($a) and !empty($_POST["popis"]) and !empty($_POST["clanek"])) {
+mysql_query("SET character_set_client=utf8");
+mysql_query("SET character_set_connection=utf8");
+mysql_query("SET character_set_results=utf8");
+mysql_query("UPDATE `clanky` SET `nazev` = '$a' ,`clanek` = '".$_POST["clanek"]."' ,`popis` = '".$_POST["popis"]."',`kat` = '".$_POST["kat"]."' WHERE id = '$id'") or die(mysql_error());
+
+$id=$_GET['id'];
+$dotaz=mysql_query("SELECT * FROM clanky where id='$id'");
+while ($vypsat=mysql_fetch_assoc($dotaz))
+{
+mysql_query("DELETE FROM clanky WHERE id='$id'") or die (mysql_error());
+echo "<p align='center'>Článek <strong>".$vypsat['nazev']."</strong> byl odstraněn!</p>";
+echo "<p align='center'><a href='index.php'><span style='color: black;'>Zpět na seznam článků</span></a></p>";
+}
